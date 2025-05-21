@@ -1,0 +1,82 @@
+--- Task A: x_k = x^(2k) / (2k)! ---
+Using generator (first 5 terms for x=2.0):
+  x=2.0, k=0: 1.00000000
+  x=2.0, k=1: 2.00000000
+  x=2.0, k=2: 0.66666667
+  x=2.0, k=3: 0.08888889
+  x=2.0, k=4: 0.00634921
+
+Using loop function:
+  x=2.0, k=3: Result=0.08888889
+  x=1.0, k=5: Result=0.00000028
+  x=0.0, k=4: Result=0.00000000
+  x=3.0, k=0: Result=1.00000000
+  x=1.5, k=4: Result=0.00063564
+------------------------------
+
+--- Task B: P_n = product_{i=1 to n} (1 + 1/i^2) ---
+Using generator (P_0 to P_4):
+  n=0: 1.00000000
+  n=1: 2.00000000
+  n=2: 2.50000000
+  n=3: 2.77777778
+  n=4: 2.95138889
+
+Using loop function:
+  n=0: Result=1.00000000
+  n=1: Result=2.00000000
+  n=2: Result=2.50000000
+  n=3: Result=2.77777778
+  n=5: Result=3.06944444
+  n=10: Result=3.34284712
+------------------------------
+
+--- Task C: Determinant D_n ---
+Using generator (a=1, b=1, D_0 to D_4):
+  a=1,b=1, n=0: 1.00000000
+  a=1,b=1, n=1: 2.00000000
+  a=1,b=1, n=2: 3.00000000
+  a=1,b=1, n=3: 4.00000000
+  a=1,b=1, n=4: 5.00000000
+
+Using loop function:
+  a=1.0,b=1.0, n=3: Result=4.00000000
+  a=2.0,b=3.0, n=4: Result=211.00000000
+  a=1.0,b=0.0, n=5: Result=1.00000000
+  a=1.0,b=2.0, n=0: Result=1.00000000
+  a=1.0,b=2.0, n=1: Result=3.00000000
+------------------------------
+
+--- Task D: S_n = sum_{k=1 to n} (a_k / 2^k) ---
+Using generator (partial sums S_1 to S_5):
+  n=1: 0.50000000
+  n=2: 0.75000000
+  n=3: 0.87500000
+  n=4: 1.00000000
+  n=5: 1.09375000
+
+Using loop function:
+  n=0: Result=0.00000000
+  n=1: Result=0.50000000
+  n=2: Result=0.75000000
+  n=3: Result=0.87500000
+  n=4: Result=1.00000000
+  n=5: Result=1.09375000
+  n=10: Result=1.28222656
+------------------------------
+
+--- Task E: y = 2 * sum (x^(2m+1) / (2m+1)) ---
+Using generator (first 5 terms for x=0.5):
+  x=0.5, term_0: 1.00000000, current_sum: 1.00000000
+  x=0.5, term_1: 0.08333333, current_sum: 1.08333333
+  x=0.5, term_2: 0.01250000, current_sum: 1.09583333
+  x=0.5, term_3: 0.00223214, current_sum: 1.09806548
+  x=0.5, term_4: 0.00043403, current_sum: 1.09849950
+
+Using loop function:
+  x=0.5, eps=1e-06: Calculated y=1.09861113 (in 8 terms), Math lib y=1.09861229
+  x=0.0, eps=1e-05: Calculated y=0.00000000 (in 0 terms), Math lib y=0.00000000
+  x=-0.5, eps=0.0001: Calculated y=-1.09849950 (in 5 terms), Math lib y=-1.09861229
+  x=0.9, eps=1e-07: Calculated y=2.94443851 (in 57 terms), Math lib y=2.94443898
+  x=0.99, eps=1e-08: Calculated y=5.29330436 (in 598 terms), Math lib y=5.29330482
+------------------------------
